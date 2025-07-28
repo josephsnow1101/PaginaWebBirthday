@@ -146,3 +146,58 @@ h1, h2 {
     transform: scale(1);
   }
 }
+@media (max-width: 768px) {
+  body {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .message-box {
+    padding: 15px;
+    margin: 20px 10px;
+    font-size: 1rem;
+  }
+
+  .carousel-inner img {
+    max-height: 250px;
+  }
+
+  .gift-card {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .gift-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .gift-card p {
+    font-size: 1rem;
+  }
+
+  .descarga-tarjeta {
+    padding: 30px 15px;
+    margin-top: 50px;
+  }
+
+  .mensaje-descarga {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

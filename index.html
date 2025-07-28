@@ -100,33 +100,11 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
   const btnDescargar = document.querySelector('a[download]');
-  btnDescargar.addEventListener('click', function (e) {
-    e.preventDefault(); // Previene la descarga inmediata
-
-    // Lanzar confetti
-    confetti({
-      particleCount: 80,
-      spread: 100,
-      origin: { y: 0.7 }
-    });
-
-    // Descargar la imagen luego de un pequeño delay
-    setTimeout(() => {
-      window.location.href = btnDescargar.href;
-    }, 300); // Tiempo para mostrar confetti
-  });
-  confetti({
-    particleCount: 100,
-    spread: 70,
-    origin: { y: 0.6 }
-  });
-  const btnDescargar = document.querySelector('a[download]');
   btnDescargar.addEventListener('click', () => {
     confetti({
       particleCount: 80,
       spread: 100,
       origin: { y: 0.7 }
-    });
   });
 </script>
 <script type="text/javascript" src="js/script.js"></script>

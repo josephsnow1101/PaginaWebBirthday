@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Feliz Cumpleaños!</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="estilos.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <h1>🎉 ¡Feliz Cumpleaños, [Nombre de tu compañera]! 🎉</h1>
+
+  <div class="message-box">
+    <h2>Querida [Nombre]</h2>
+    <p>
+      Hoy celebramos no solo tu cumpleaños, sino todo lo que significas para nosotros.  
+      Tu alegría, tu apoyo y tu energía positiva hacen de nuestro equipo un lugar mejor.  
+      ¡Gracias por ser tan especial!
+    </p>
+    <p>Con cariño,</p>
+    <p>🎈 Tus compañeros de trabajo 🎈</p>
+  </div>
+
+  <div id="recuerdosCarousel" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img1.jpg" class="d-block w-100" alt="Recuerdo 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img2.jpg" class="d-block w-100" alt="Recuerdo 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img3.jpg" class="d-block w-100" alt="Recuerdo 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#recuerdosCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#recuerdosCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <h2 style="margin-top: 60px;">🎁 Tarjetas de Regalo con Mensajes 🎁</h2>
+
+  <div id="tarjetasCarousel" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="gift-card">
+          <h3>🎉 ¡Feliz cumpleaños!</h3>
+          <p>Espero que este año esté lleno de logros y alegrías. ¡Te lo mereces!</p>
+          <span>— Carlos</span>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="gift-card">
+          <h3>🎈 Muchas felicidades</h3>
+          <p>Gracias por siempre estar con una sonrisa. ¡Eres inspiración!</p>
+          <span>— Laura</span>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="gift-card">
+          <h3>🎁 Te queremos mucho</h3>
+          <p>Tu energía hace mejor el lugar. ¡Feliz vuelta al sol!</p>
+          <span>— Equipo de Finanzas</span>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#tarjetasCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tarjetasCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  <section class="descarga-tarjeta container text-center">
+    <h2 class="mt-5 mb-4">📥 Descarga tu Tarjeta Especial</h2>
+    <div class="tarjeta-descargable">
+      <img src="tarjeta-foto.jpg" alt="Tarjeta personalizada" class="img-fluid rounded mb-3" />
+      <p class="mensaje-descarga">
+        "Nunca olvides lo valiosa que eres para todos nosotros. ¡Feliz cumpleaños!"
+      </p>
+      <a href="tarjeta-foto.jpg" download class="btn btn-primary btn-lg mt-2">
+        📎 Descargar Tarjeta
+      </a>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

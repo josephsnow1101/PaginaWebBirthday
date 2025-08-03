@@ -156,17 +156,31 @@ Feliz cumpleaños. Que la vida te devuelva en sonrisas todo lo que das en amor. 
       </a>
     </div>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    // 🎉 Confetti al cargar la página
+    confetti({
+      particleCount: 150,
+      spread: 120,
+      origin: { y: 0.6 }
+    });
+
+    // 🎉 Confetti al descargar la tarjeta
     const btnDescargar = document.querySelector('a[download]');
     if (btnDescargar) {
-      btnDescargar.addEventListener('click', () => {
+      btnDescargar.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevenir descarga inmediata
         confetti({
           particleCount: 100,
           spread: 90,
           origin: { y: 0.6 }
         });
+
+        // Retrasar descarga para mostrar el confetti
+        setTimeout(() => {
+          window.location.href = btnDescargar.href;
+        }, 1000); // Espera 1 segundo
       });
     }
   });

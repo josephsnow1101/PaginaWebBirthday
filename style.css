@@ -201,3 +201,18 @@ h1, h2 {
     height: 25px;
   }
 }
+#typewriter::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: #6c3eb5;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}

@@ -216,3 +216,36 @@ h1, h2 {
     opacity: 0;
   }
 }
+.premios h2 {
+  font-weight: bold;
+  color: #6d2c91;
+  margin-bottom: 40px;
+}
+
+.medalla {
+  background: linear-gradient(135deg, #fdf1ff, #e2c4ff);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(128, 0, 128, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.medalla:hover {
+  transform: scale(1.05);
+}
+
+.medalla .icono {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.medalla h4 {
+  color: #4a235a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.medalla p {
+  font-size: 0.95rem;
+  color: #5a3a6d;
+}

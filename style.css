@@ -249,3 +249,9 @@ h1, h2 {
   font-size: 0.95rem;
   color: #5a3a6d;
 }
+.icono-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}

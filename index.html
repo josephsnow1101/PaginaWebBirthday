@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <h1>🎉 ¡Feliz Cumpleaños, Idania 🎉</h1>
+ <h1><span id="typewriter"></span></h1>
 
   <div class="message-box">
     <h2>Querida Idania</h2>
@@ -183,6 +183,21 @@ Feliz cumpleaños. Que la vida te devuelva en sonrisas todo lo que das en amor. 
         }, 1000); // Espera 1 segundo
       });
     }
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    const texto = "🎉 ¡Feliz Cumpleaños, Idania! 🎉";
+    const speed = 100; // velocidad (ms) por letra
+    let i = 0;
+
+    function escribir() {
+      if (i < texto.length) {
+        document.getElementById("typewriter").innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(escribir, speed);
+      }
+    }
+
+    escribir();
   });
 </script>
 <script type="text/javascript" src="js/script.js"></script>
